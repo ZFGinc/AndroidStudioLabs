@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Сахалин Tech</string>
+    <string name="copyright">©Команда Бетта</string>
+
+    <string name="autorization">Авторизация</string>
+    <string name="prev_number">+7 (123) 456-78-90</string>
+    <string name="prev_code">PassWord123</string>
+
+    <string name="send_code">Прислать код подтверждения</string>
+    <string name="sing_in">Войти</string>
+
+    <string name="or">или</string>
+    <string name="reg">Нет аккаунта?\nДавайте зарегестрируемся!</string>
+    <string name="sign_with_gosuslugi">Войти с помощью ГосУслуг</string>
+    <string name="search">Что вас интересует?</string>
+    <string name="servises">Сервисы</string>
+    <string name="events">События</string>
+
+</resources>

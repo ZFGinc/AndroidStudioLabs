@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/blue"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="8dp"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/fio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+
+            android:layout_alignParentEnd="true"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@+id/icon_people"
+            android:fontFamily="monospace"
+            android:gravity="center_vertical"
+            android:text="Главная страница"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/icon_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/people"
+            app:tint="@color/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_marginHorizontal="16dp"
+        android:layout_below="@+id/header"
+        tools:ignore="Orientation" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/feedback"
+        android:layout_below="@+id/line">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/search_input"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="0dp"
+                android:drawableStart="@drawable/search_icon"
+
+                android:drawablePadding="16dp"
+                android:drawableTint="@color/black"
+                android:hint="@string/search"
+                android:inputType="text"
+
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textAlignment="textStart"
+
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="22sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/border"
+                android:scaleType="fitXY"
+                android:src="@drawable/map_campus" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="8dp"
+                tools:ignore="Orientation" />
+
+            <Button
+                android:id="@+id/qr_code_to"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/border"
+                android:text="ПРОПУСК"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:text="Сервисы"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="8dp"
+                tools:ignore="Orientation" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginHorizontal="28dp"
+                android:layout_marginTop="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/button_raspisanie"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/border_block"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/raspisanie" />
+
+                    <ImageButton
+                        android:id="@+id/button_docs"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginEnd="24dp"
+                        android:background="@drawable/border_block"
+
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bumajka" />
+
+                    <ImageButton
+                        android:id="@+id/button_other"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="right"
+                        android:background="@drawable/border_block"
+
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/other_servises" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:text="События"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="8dp"
+                tools:ignore="Orientation" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="28dp"
+                android:layout_marginTop="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="350dp"
+                        android:layout_height="220dp"
+                        android:background="@drawable/border_block"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/news_1"
+                        android:layout_marginEnd="16dp"/>
+
+                    <ImageButton
+                        android:layout_width="350dp"
+                        android:layout_height="220dp"
+                        android:background="@drawable/border_block"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/news_2"
+                        android:layout_marginEnd="16dp"/>
+
+                    <ImageButton
+                        android:layout_width="350dp"
+                        android:layout_height="220dp"
+                        android:background="@drawable/border_block"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/news_3" />
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:text="Обратная связь"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

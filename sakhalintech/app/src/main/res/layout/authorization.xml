@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/blue">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_below="@+id/header"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:text="@string/autorization"
+            android:gravity="center"
+            android:layout_marginTop="156dp"/>
+
+        <EditText
+            android:id="@+id/input_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prev_number"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginTop="32dp"
+            android:autofillHints="phone"
+            android:inputType="phone"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/input_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prev_code"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginTop="8dp"
+            android:autofillHints="password"
+            android:inputType="textPassword"
+            android:textAlignment="center"/>
+
+
+        <Button
+            android:id="@+id/sing_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginTop="64dp"
+            android:text="@string/sing_in"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="16dp"
+            android:text="@string/reg"
+            android:gravity="center"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="16dp"
+            android:text="@string/or"
+            android:gravity="center"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/sign_with_gosuslugi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/sign_with_gosuslugi" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="@string/copyright"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+</RelativeLayout>
