@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RickAndMorty</string>
+    <string name="search">Search</string>
+    <string name="about">More info...</string>
+    <string name="prev"><![CDATA[<]]></string>
+    <string name="next"><![CDATA[>]]></string>
+    <string name="back">X</string>
+    <string name="about_character_title">About the character</string>
+    <string name="episodes_title">Episodes with this character:</string>
+</resources>
