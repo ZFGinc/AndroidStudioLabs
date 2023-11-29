@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">SimpleSignIn</string>
+    <string name="title_login">Already Have an\nAccount?</string>
+    <string name="title_recovery">Account Recovery</string>
+    <string name="login_button">Login</string>
+    <string name="login_title">Sign in</string>
+    <string name="email_field">Email</string>
+    <string name="password_field">Password</string>
+    <string name="forgot_password">FORGOT PASSWORD?</string>
+    <string name="or_sign_in">OR</string>
+    <string name="new_user">New User? Register Now</string>
+    <string name="sign_in">Already have an account? Log in now</string>
+    <string name="recovery">Recovery</string>
+    <string name="enter_mail">Enter your email</string>
+    <string name="not_found">Account not found!</string>
+
+    <string name="correct_login">You logined in system</string>
+    <string name="uncorrect_login">This account does not exist</string>
+    <string name="none_field">One or more fields are not filled in</string>
+    <string name="email_not_valid">Your email is not valid</string>
+    <string name="password_length">Password is too short or too long</string>
+</resources>
