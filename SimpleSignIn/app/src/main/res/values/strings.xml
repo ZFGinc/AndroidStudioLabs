@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SimpleSignIn</string>
+    <string name="login_button">Login</string>
+    <string name="login_title">Sign in</string>
+    <string name="username_field">Username</string>
+    <string name="password_field">Password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="or_sign_in">or sign in with</string>
+
+    <string name="correct_login">You logined in system</string>
+    <string name="uncorrect_login">Error!!!</string>
+    <string name="none_field">One or more fields are not filled in</string>
+</resources>
